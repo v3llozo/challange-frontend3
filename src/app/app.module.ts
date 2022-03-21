@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
+import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, BannerComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, BannerComponent, ListaProdutosComponent],
   imports: [BrowserModule, AppRoutingModule],
   exports: [],
   providers: [],
