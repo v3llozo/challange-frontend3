@@ -7,9 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, BannerComponent, ListaProdutosComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, BannerComponent, ListaProdutosComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule],
   exports: [],
   providers: [],
