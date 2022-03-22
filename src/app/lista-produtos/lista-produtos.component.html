@@ -1,15 +1,14 @@
-<div class="px-20 mt-16">
+<div class="px-36 mt-16" *ngFor="let c of categorias">
   <section class="flex flex-row justify-between mb-4">
-    <h1 class="font-bold text-2xl text-neutral-700">Produtos</h1>
+    <h1 class="font-bold text-2xl text-neutral-700">{{ c.category }}</h1>
     <span class="text-sm font-bold text-blue-500">
       <a>Ver tudo </a>
       <span> -></span>
     </span>
   </section>
-  <section>
-    <div class="h-44 w-40 bg-slate-700"></div>
-    <p class="text-neutral-700 mt-2">Produto XYZ</p>
-    <p class="text-neutral-700 font-bold">R$ 50,00</p>
-    <a class="text-blue-500 font-bold"> Ver produto</a>
-  </section>
+  <div class="flex flex-wrap gap-4">
+    <section *ngFor="let p of c.products; let i = index">
+      <app-produto [produto]="p"></app-produto>
+    </section>
+  </div>
 </div>
